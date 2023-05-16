@@ -75,6 +75,7 @@ footer>h1 {
 .peovac {
     margin-right: var(--razmak);
     text-align: end;
+    color: white;
 }
 
 .directory-text {
