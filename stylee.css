@@ -18,7 +18,7 @@ header.glavni {
 }
 
 header>h3 {
-    display: flex;
+    
     margin-left: var(--razmak);
     color: #82b440;
     align-items: center;
@@ -110,6 +110,7 @@ footer>h1 {
 a {
     text-decoration: none;
     color: black;
+    
 
 }
 
@@ -135,6 +136,17 @@ a {
     font-size: 22px;
 }
 
-a:hover {
+.addlisting:hover {
     background-color: #d35924;
 }
+
+.aflex {
+    display: flex;
+    
+}
+
+.aflex>h3 {
+    margin: var(--razmak);
+    color: #82b440;
+}
+
