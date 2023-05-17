@@ -149,3 +149,7 @@ a {
     margin: var(--razmak);
     color: #82b440;
 }
+
+.placeholder {
+    display: flex;
+}
