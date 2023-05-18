@@ -33,6 +33,7 @@ const eventTemplate = `
 function allEvents() {
     for (let event of events) {
         const container = document.createElement('div');
+        container.className = 'card';
         container.innerHTML = eventTemplate;
 
         container.getElementsByClassName('pictures')[0].src = event.image;
