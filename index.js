@@ -3,7 +3,7 @@ const events = [
     { name: 'Just pub', event: 'Muzika uživo', date: '12.05.2023', location: 'Spasovdanska 13a', image: "justpub.jpg" },
     { name: 'Majstor za pivo', event: 'Muzika uživo', date: '13.05.2023', location: 'Spasovdanska 31G', image: "majstorzapivo.jpg" },
     { name: 'New Folder', event: 'Muzika uživo', date: '19.05.2023', location: 'Nikole Tesle 23', image: "newfolder.jpg" },
-    { name: 'Nomad', event: 'Muzika uživo', date: '19.05.2023', location: 'Trg Republike Srbije 3', image:"nomad.jpg" },
+    { name: 'Nomad', event: 'Muzika uživo', date: '19.05.2023', location: 'Trg Republike Srbije 3', image: "nomad.jpg" },
     { name: 'Czech In Pub', event: 'Muzika uživo', date: '20.05.2023', location: 'Nikole Tesle 55', image: "chezhin.jpg" },
 ];
 console.log(events);

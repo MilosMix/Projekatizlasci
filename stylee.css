@@ -201,13 +201,13 @@ input[type=text] {
     margin-right: 10px;
     margin-top: 40px;
     background-color: #d35924;
-    color:white;
+    color: white;
     border: none;
     transition: background-color 200ms;
 }
 
 .send:hover {
     background-color: black;
-    box-shadow: 0 5px 1.25rem rgba(0,0,0,.25);
+    box-shadow: 0 5px 1.25rem rgba(0, 0, 0, .25);
     cursor: pointer;
 }
