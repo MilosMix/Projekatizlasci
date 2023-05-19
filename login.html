@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IS Noćni život</title>
+    <title>Login</title>
     <link rel="stylesheet" href="stylee.css">
     <header class="glavni">
         <a class="aflex" href="index.html">
@@ -13,26 +13,19 @@
             <h3>IS - Noćni život</h3>
         </a>
         <a href="about.html" class="about-link">About</a>
-        <a href="login.html" class="loginlink">Prijavi se</a>
+
     </header>
 </head>
 
 <body>
-    <div class="directory">
-        <h1 class="directory-text">Noćni život - Događaji</h1>
-        <a class="addlisting" href="addlisting.html">
-            <i>+</i>
-            DODAJ DOGAĐAJ
-        </a>
+
+    <div class="glavni-kontejner text-left vertical-space">
+        <h2 class="description">Login</h2>
+        <input class="login" type="text" placeholder="Email" id="email" required>
+        <input class="login" type="password" placeholder="Lozinka" required>
+        <button onclick="indexhtml()" type="button" class="send">Login</button>
     </div>
 
-
-
-    <div class="glavni-kontejner">
-
-
-
-    </div>
     <footer>
 
         <img class="logo2" src="Grb_Istocnog_Sarajeva.png" alt="logo" width="88px">
@@ -41,9 +34,10 @@
             Developed by Aquarel Company.
         </p>
 
+
     </footer>
     <script src="main.js"></script>
-    <script src="script.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>

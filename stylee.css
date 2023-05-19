@@ -18,7 +18,8 @@ header.glavni {
 }
 
 header>h3 {
-
+    display: flex;
+    text-align: center;
     margin-left: var(--razmak);
     color: #82b440;
     align-items: center;
@@ -34,8 +35,7 @@ header>h3 {
 
 .glavni-kontejner {
     text-align: center;
-    margin: 120px auto;
-    max-width: 73.125rem;
+    margin: 70px auto;
 }
 
 .glavni-kontejner img {
@@ -46,13 +46,14 @@ header>h3 {
 
 }
 
-.glavni>button {
+.loginlink {
+    font-size: smaller;
     height: 100%;
     margin-left: auto;
     margin-right: var(--razmak);
     margin-top: 30px;
     border-radius: .25rem;
-    padding: 3px 20px;
+    padding: 2px 15px;
     background-color: #82b440;
     color: white;
 }
@@ -95,23 +96,18 @@ footer>h1 {
     align-items: center;
     justify-content: center;
     position: relative;
-
-
 }
 
 .txt {
     padding: 1.875rem 2.6rem;
-
 }
 
 a {
     text-decoration: none;
     color: black;
-
-
 }
 
-.logo2 {
+logo2 {
     margin-top: var(--razmak);
 }
 
@@ -143,6 +139,8 @@ a {
 }
 
 .aflex>h3 {
+    display: flex;
+    align-items: center;
     margin: var(--razmak);
     color: #82b440;
 }
@@ -156,7 +154,7 @@ a {
     height: 70px;
 }
 
-input[type=text] {
+input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -201,13 +199,75 @@ input[type=text] {
     margin-right: 10px;
     margin-top: 40px;
     background-color: #d35924;
-    color:white;
+    color: white;
     border: none;
     transition: background-color 200ms;
 }
 
 .send:hover {
     background-color: black;
-    box-shadow: 0 5px 1.25rem rgba(0,0,0,.25);
+    box-shadow: 0 5px 1.25rem rgba(0, 0, 0, .25);
     cursor: pointer;
+}
+
+.vertical-space {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.about-link {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    color: #e3e3e3;
+    font-size: small;
+}
+
+.login {
+    display: flex;
+}
+
+.login {
+    margin-top: 10px;
+    width: 50%;
+    height: 50px;
+}
+.email-button {
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+
+}
+#mail {
+padding-right: 14px;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .glavni-kontejner {
+        max-width: 27rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .glavni-kontejner {
+        max-width: 32rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .glavni-kontejner {
+        max-width: 51rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .glavni-kontejner {
+        max-width: 64rem;
+    }
 }
