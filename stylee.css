@@ -9,7 +9,6 @@ body {
 }
 
 header.glavni {
-    margin-bottom: 80px;
     display: flex;
     background-color: rgb(44, 44, 44);
     align-items: center;
@@ -56,9 +55,11 @@ header>h3 {
 
 
 }
+
 .logo2 {
     width: 130px;
 }
+
 footer {
     margin-top: 110px;
     padding: 1px;
@@ -78,19 +79,37 @@ footer>h1 {
     color: white;
 }
 
+
 .directory-text {
-    top: 40%;
-    right: 35%;
-    text-align: center;
-
-    color: rgb(255, 255, 255);
-    font-size: 45px;
-
-
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    cursor: none;
 }
 
+.directory-text:after {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.directory-text:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
 .directory {
-    background-image: url("rsz_1collage.jpg");
+    background-image: url("headerslika.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -220,7 +239,7 @@ input {
 .about-link {
     display: flex;
     align-items: center;
-    padding-left: 25px;
+    padding-left: 30px;
     color: #e3e3e3;
     font-size: small;
     position: relative;

@@ -27,6 +27,6 @@ promijeniDugme();
 
 const logoutBtn = document.getElementById('logout-btn');
 logoutBtn.addEventListener('click', function (event) {
-    window.location = 'login.html';
+    window.location = 'index.html';
     localStorage.clear();
 });
