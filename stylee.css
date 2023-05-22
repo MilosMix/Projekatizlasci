@@ -56,7 +56,9 @@ header>h3 {
 
 
 }
-
+.logo2 {
+    width: 130px;
+}
 footer {
     margin-top: 110px;
     padding: 1px;
