@@ -1,4 +1,4 @@
-const events = [];
+const events = JSON.parse(localStorage.getItem('events')) || [];
 
 const trenutnoDugme = document.getElementsByClassName('send')[0];
 trenutnoDugme.addEventListener('click', kadaSeKliknePosalji);
@@ -28,6 +28,10 @@ function kadaSeKliknePosalji(event) {
     addEvent(event2);
 
     localStorage.setItem("events", JSON.stringify(events));
+    let data1 = JSON.parse(localStorage.getItem("events"));
+    window.scrollTo(0, 0);
+    document.forms[0].reset();
+    console.log(data1);
 }
 
 let imeDogadjaja = '';
