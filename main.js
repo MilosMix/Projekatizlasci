@@ -1,7 +1,7 @@
 const user = {
     email: null,
     password: null,
-    isLogedin() {
+    get isLogedin() {
         if (this.email == null || this.password == null) {
             return false;
         } else {
@@ -13,7 +13,20 @@ const user = {
 user.email = localStorage.getItem("email");
 user.password = localStorage.getItem("password");
 function promijeniDugme() {
-    var dugme = document.getElementById("dugme");
-    dugme.innerHTML = user.email; console.log (dugme)
-  }
-console.log (promijeniDugme())
+    const loginBtn = document.getElementById("login-btn");
+    const displayEmailEl = document.getElementById("display-email");
+    const logoutBtn = document.getElementById("logout-btn")
+    if (user.isLogedin) {
+        displayEmailEl.textContent = user.email;
+        loginBtn.classList.add('hidden');
+        displayEmailEl.classList.remove('hidden');
+        logoutBtn.classList.remove('hidden');
+    }
+}
+promijeniDugme();
+
+const logoutBtn = document.getElementById('logout-btn');
+logoutBtn.addEventListener('click', function (event) {
+    window.location = 'login.html';
+    localStorage.clear();
+});

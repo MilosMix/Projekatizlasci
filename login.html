@@ -13,31 +13,44 @@
             <h3>IS - Noćni život</h3>
         </a>
         <a href="about.html" class="about-link">About</a>
-
+        <div>
+            <a id="login-btn" href="login.html" class="loginlink btn">Prijavi se</a>
+            <div class="logout-div">
+                <p id="display-email" class="hidden"></p>
+                <button id="logout-btn" class="hidden btn">Odjavi se</button>
+            </div>
+        </div>
     </header>
 </head>
 
 <body>
 
-    <div class="glavni-kontejner text-left vertical-space">
-        <h2 class="description">Login</h2>
-        <input class="login" type="text" placeholder="Email" id="email" required>
-        <input class="login" type="password" placeholder="Lozinka" required>
-        <button onclick="indexhtml()" type="button" class="send">Login</button>
-    </div>
+    <div class="glavni-cont">
+        <form id="login-form" class="container">
+            <h1 class="form__title">Login</h1>
+            <div class="form__input-group">
+                <input type="text" class="form__input" placeholder="Email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button type="submit" id="myBtnLogin" class="send">Login</button>
+        </form>
 
-    <footer>
+        <script src="main.js"></script>
+        <script src="login.js"></script>
+        <footer>
 
-        <img class="logo2" src="Grb_Istocnog_Sarajeva.png" alt="logo" width="88px">
-        <h1>Istočno Sarajevo - Noćni život</h1>
-        <p class="peovac">Copyright © 2023 Aquarel Company.<br>
-            Developed by Aquarel Company.
-        </p>
+            <img class="logo2" src="Grb_Istocnog_Sarajeva.png" alt="logo" width="88px">
+            <h1>Istočno Sarajevo - Noćni život</h1>
+            <p class="peovac">Copyright © 2023 Aquarel Company.<br>
+                Developed by Aquarel Company.
+            </p>
 
 
-    </footer>
-    <script src="main.js"></script>
-    <script src="login.js"></script>
+        </footer>
 </body>
 
 </html>

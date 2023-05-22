@@ -9,12 +9,23 @@ body {
 }
 
 header.glavni {
+    margin-bottom: 80px;
     display: flex;
     background-color: rgb(44, 44, 44);
-
+    align-items: center;
     width: 100%;
     white-space: nowrap;
     z-index: 1;
+}
+
+header.glavni>div {
+    margin-left: auto;
+    margin-right: 0;
+    margin-right: var(--razmak);
+}
+
+header.glavni>div>p {
+    color: white;
 }
 
 header>h3 {
@@ -46,19 +57,8 @@ header>h3 {
 
 }
 
-.loginlink {
-    font-size: smaller;
-    height: 100%;
-    margin-left: auto;
-    margin-right: var(--razmak);
-    margin-top: 30px;
-    border-radius: .25rem;
-    padding: 2px 15px;
-    background-color: #82b440;
-    color: white;
-}
-
 footer {
+    margin-top: 110px;
     padding: 1px;
     text-align: center;
     background-color: rgb(44, 44, 44);
@@ -105,10 +105,6 @@ footer>h1 {
 a {
     text-decoration: none;
     color: black;
-}
-
-logo2 {
-    margin-top: var(--razmak);
 }
 
 .addlisting {
@@ -225,6 +221,8 @@ input {
     padding-left: 25px;
     color: #e3e3e3;
     font-size: small;
+    position: relative;
+
 }
 
 .login {
@@ -236,17 +234,50 @@ input {
     width: 50%;
     height: 50px;
 }
+
 .email-button {
     margin-left: auto;
     margin-right: 0;
-    display: flex;
     align-items: center;
 
 }
+
 #mail {
-padding-right: 14px;
+    padding-right: 14px;
 }
 
+.container {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #ffffff;
+}
+
+.logout-div {
+    display: flex;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    margin: auto;
+    font-size: smaller;
+    height: 100%;
+    border-radius: .25rem;
+    padding: 2px 15px;
+    background-color: #82b440;
+    color: white;
+}
+
+#display-email {
+    padding-right: 12px;
+    color: white;
+}
+
+.hidden {
+    display: none !important;
+}
 
 @media only screen and (min-width: 600px) {
     .glavni-kontejner {
