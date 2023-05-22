@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="stylee.css">
     <header class="glavni">
         <a class="aflex" href="index.html">
-            <img class="logo" src="Grb_Istocnog_Sarajeva.png" alt="logo" width=88px>
+            <img class="logo" src="logopng.png" alt="logo" width=88px>
             <h3>IS - Noćni život</h3>
         </a>
-        <button type="button">Prijavi se</button>
+        <a href="about.html" class="about-link">About</a>
+        <div>
+            <a id="login-btn" href="login.html" class="loginlink btn">Prijavi se</a>
+            <div class="logout-div">
+            <p id="display-email" class="hidden"></p>
+            <button id="logout-btn" class="hidden btn">Odjavi se</button></div>
+        </div>
     </header>
 </head>
 
@@ -47,13 +53,14 @@
     </div>
     <footer>
 
-        <img class="logo2" src="Grb_Istocnog_Sarajeva.png" alt="logo" width="88px">
+        <img class="logo2" src="logopng.png" alt="logo" width="88px">
         <h1>Istočno Sarajevo - Noćni život</h1>
         <p class="peovac">Copyright © 2023 Aquarel Company.<br>
             Developed by Aquarel Company.
         </p>
 
     </footer>
+    <script src="main.js"></script>
     <script src="add-listing.js"></script>
 </body>
 
